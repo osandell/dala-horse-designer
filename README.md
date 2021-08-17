@@ -1,4 +1,4 @@
-# ![WebApp](https://raw.githubusercontent.com/osandell/dala-horse-designer/main/dala-horse-designer-screenshot.png)
+# ![WebApp](https://raw.githubusercontent.com/osandell/dala-horse-designer/media/dala-horse-designer-screenshot.png)
 
 # Dala Horse Designer
 
@@ -23,12 +23,12 @@ Here is a live demo of the app: https://osandell.github.io/dala-horse-designer/
 
 In the editor the user is able to mix custom colors and to color the horse by either clicking or tapping on the canvas. One can zoom in and out by using the scroll wheel or by pinching. It's also possible to extract a color from the canvas with the colorize tool. The user can use the undo + redo buttons to go back and forth in history. Lastly it's possible to add the finished design to a shopping cart, or to save a modified design.
 
-![](https://raw.githubusercontent.com/osandell/dala-horse-designer/main/dala-horse-designer-editor-screenshot.png)
+![](https://raw.githubusercontent.com/osandell/dala-horse-designer/media/dala-horse-designer-editor-screenshot.png)
 
 ### The shopping cart
 
 Here the user can see all the saved designs, increase or decrease quantity, and choose among 3 different sizes. The total price is then calculated and shown at the bootom. There is also a checkout button that is currently not enabled, but could potentially be integrated in a future version.
-![](https://raw.githubusercontent.com/osandell/dala-horse-designer/main/dala-horse-designer-shopping-cart-screenshot.png)
+![](https://raw.githubusercontent.com/osandell/dala-horse-designer/media/dala-horse-designer-shopping-cart-screenshot.png)
 
 ## Device support
 
