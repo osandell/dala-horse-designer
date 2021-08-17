@@ -1,4 +1,4 @@
-import Color from "./Color.interface"
+import Color from './Color.interface'
 
 interface ColorModificationStep {
   colorId: number

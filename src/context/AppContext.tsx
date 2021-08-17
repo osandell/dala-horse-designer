@@ -425,10 +425,8 @@ const AppContextProvider: FC<{ children: React.ReactNode }> = (
   const [cartItems, setCartItems] = useState<CartItem[]>(
     appContextInitial.cartItems
   )
-  const [
-    indexOfDesignBeingEdited,
-    setIndexOfDesignBeingEdited,
-  ] = useState<number>(appContextInitial.indexOfDesignBeingEdited)
+  const [indexOfDesignBeingEdited, setIndexOfDesignBeingEdited] =
+    useState<number>(appContextInitial.indexOfDesignBeingEdited)
 
   const [alertProps, setAlertProps] = useState<AlertProps | null>(null)
 

@@ -1,9 +1,9 @@
-import { ReactElement, FC, ChangeEvent } from "react"
-import ColorSlider from "./ColorSlider/ColorSlider"
-import Box from "@material-ui/core/Box"
+import { ReactElement, FC, ChangeEvent } from 'react'
+import ColorSlider from './ColorSlider/ColorSlider'
+import Box from '@material-ui/core/Box'
 
 // interfaces
-import Color from "../../shared/interfaces/Color.interface"
+import Color from '../../shared/interfaces/Color.interface'
 
 interface ConfigProp {
   label: string
@@ -32,24 +32,24 @@ const HSLColorPicker: FC<HSLColorPickerProps> = (props): ReactElement => {
   if (props.color === null) {
     config = {
       hue: {
-        label: "Hue:",
+        label: 'Hue:',
         thumbColor: `#888`,
         sliderPos: 0,
-        background: "linear-gradient(to right, #888, #888)",
+        background: 'linear-gradient(to right, #888, #888)',
         changeHandler: null,
       },
       saturation: {
-        label: "Saturation:",
+        label: 'Saturation:',
         thumbColor: `#888`,
         sliderPos: 0,
-        background: "linear-gradient(to right, #888, #888)",
+        background: 'linear-gradient(to right, #888, #888)',
         changeHandler: null,
       },
       lightness: {
-        label: "Lightness:",
+        label: 'Lightness:',
         thumbColor: `#888`,
         sliderPos: 0,
-        background: "linear-gradient(to right, #888, #888)",
+        background: 'linear-gradient(to right, #888, #888)',
         changeHandler: null,
       },
     }
@@ -58,7 +58,7 @@ const HSLColorPicker: FC<HSLColorPickerProps> = (props): ReactElement => {
       event: ChangeEvent<{}>,
       value: number | number[]
     ) => {
-      if (typeof value === "number" && props.color !== null) {
+      if (typeof value === 'number' && props.color !== null) {
         let hue = (value / 100) * 360
         props.handleChange({ h: hue, s: props.color.s, l: props.color.l })
       }
@@ -68,7 +68,7 @@ const HSLColorPicker: FC<HSLColorPickerProps> = (props): ReactElement => {
       event: ChangeEvent<{}>,
       value: number | number[]
     ) => {
-      if (typeof value === "number" && props.color !== null) {
+      if (typeof value === 'number' && props.color !== null) {
         let saturation = value
         props.handleChange({
           h: props.color.h,
@@ -82,7 +82,7 @@ const HSLColorPicker: FC<HSLColorPickerProps> = (props): ReactElement => {
       event: ChangeEvent<{}>,
       value: number | number[]
     ) => {
-      if (typeof value === "number" && props.color !== null) {
+      if (typeof value === 'number' && props.color !== null) {
         let lightness = value
         props.handleChange({ h: props.color.h, s: props.color.s, l: lightness })
       }
@@ -90,22 +90,22 @@ const HSLColorPicker: FC<HSLColorPickerProps> = (props): ReactElement => {
 
     config = {
       hue: {
-        label: "Hue:",
+        label: 'Hue:',
         thumbColor: `hsl(${props.color.h}, 100%, 50%)`,
         sliderPos: (props.color.h / 360) * 100,
         background:
-          "linear-gradient(to right,  rgb(255,0,0), rgb(255,255,0), rgb(0,255,0),rgb(0,255,255),rgb(0,0,255),rgb(255,0,255),rgb(255,0,0))",
+          'linear-gradient(to right,  rgb(255,0,0), rgb(255,255,0), rgb(0,255,0),rgb(0,255,255),rgb(0,0,255),rgb(255,0,255),rgb(255,0,0))',
         changeHandler: handleHueChange,
       },
       saturation: {
-        label: "Saturation:",
+        label: 'Saturation:',
         thumbColor: `hsl(${props.color.h}, ${props.color.s}%, 50%)`,
         sliderPos: props.color.s,
         background: `linear-gradient(to right,  hsl(${props.color.h}, 0%, 50%), hsl(${props.color.h}, 100%, 50%))`,
         changeHandler: handleSaturationChange,
       },
       lightness: {
-        label: "Lightness:",
+        label: 'Lightness:',
         thumbColor: `hsl(${props.color.h}, 100%, ${props.color.l}%)`,
         sliderPos: props.color.l,
         background: `linear-gradient(to right,  hsl(${props.color.h}, 100%, 0%), hsl(${props.color.h}, 100%, 50%), hsl(${props.color.h}, 100%, 100%))`,

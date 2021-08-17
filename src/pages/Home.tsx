@@ -151,9 +151,8 @@ const Home: FC<{}> = (): ReactElement => {
   const { shapes, setShapes } = useContext(AppContext)
   const { paletteColors, setPaletteColors } = useContext(AppContext)
   const { cartItems, setCartItems } = useContext(AppContext)
-  const { indexOfDesignBeingEdited, setIndexOfDesignBeingEdited } = useContext(
-    AppContext
-  )
+  const { indexOfDesignBeingEdited, setIndexOfDesignBeingEdited } =
+    useContext(AppContext)
 
   const classes = useStyles({
     shoppingCartTranslateX: shoppingCartOpen ? 0 : 100,
