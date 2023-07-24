@@ -21,10 +21,10 @@ jobs:
         run: yarn test -- --coverage
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
-      - name: Semantic release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npx semantic-release
+      # - name: Semantic release
+        # env:
+          # GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        # run: npx semantic-release
       - name: Deploy
         run: |
           git config --global user.name $user_name
