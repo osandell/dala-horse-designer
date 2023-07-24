@@ -15,7 +15,7 @@ This app was created to practice my React.js + Typescript skills and to showcase
 
 ## Demo
 
-Here is a live demo of the app: https://dalahorsedesigner.shop
+Here is a live demo of the app: https://osandell.github.io/dala-horse-designer/
 
 ## Site
 
