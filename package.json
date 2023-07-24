@@ -1,6 +1,6 @@
 {
   "name": "dala-horse",
-  "homepage": "http://www.olofsandell.com/dala-horse-designer",
+  "homepage": "https://osandell.github.io/dala-horse-designer",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -38,7 +38,7 @@
     "test:watch": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -r https://x-access-token:${GH_PAGES_TOKEN}@github.com/${GITHUB_REPOSITORY}",
     "prepare": "husky install"
   },
   "eslintConfig": {
